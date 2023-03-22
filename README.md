@@ -12,6 +12,8 @@
     - Set `APP_PORT` and start `sail up -d`
     - Verify MySQL connection using Sequel Ace query browser
     - Setup test mysql container and `.env.testing` on port 8011
+    - Run migrations
+      - Error `nodename nor servname provided`, needed to add `mysql` to _/etc/hosts_
     - Create supporting directories
       - _.../contracts_
         - Store interfaces
