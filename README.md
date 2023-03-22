@@ -23,6 +23,13 @@
           - Repository classes to connect with external APIs/DBs
       - _.../services_
           - Service classes to do the business logic
+    - New branch for TASK-1
+    - Create activities table migration, constants, and unit tests
+      - Connection refused to test DB, DB server stopped, added tmpfs to docker-compose
+      - Use `RefreshDatabase` trait
+      - Tests passing!
+    - Create model and factory with unit tests
+      - Nothing to test in `Activity` model yet
 
 
 

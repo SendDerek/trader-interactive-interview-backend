@@ -42,6 +42,7 @@ services:
 
     mysql-test:
         image: 'mysql/mysql-server:8.0'
+        tmpfs: /var/lib/mysql
         ports:
             - '8011:8011'
         environment:
