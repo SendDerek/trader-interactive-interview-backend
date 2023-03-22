@@ -15,13 +15,13 @@
     - Run migrations
       - Error `nodename nor servname provided`, needed to add `mysql` to _/etc/hosts_
     - Create supporting directories
-      - _.../contracts_
+      - _.../app/Contracts_
         - Store interfaces
-      - _.../payloads_
+      - _.../app/Payloads_
           - Data transfer objects (DTOs)
-      - _.../repositories_
+      - _.../app/Repositories_
           - Repository classes to connect with external APIs/DBs
-      - _.../services_
+      - _.../app/Services_
           - Service classes to do the business logic
     - New branch for TASK-1
     - Create activities table migration, constants, and unit tests
