@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use App\Contracts\BoredApiRepository as BoredApiRepositoryContract;
+use App\Contracts\LoadActivityDataService as LoadActivityDataServiceContract;
+use App\Repositories\BoredApiRepository;
+use App\Services\LoadActivityDataService;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -11,7 +15,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->bind(BoredApiRepositoryContract::class, BoredApiRepository::class);
+        $this->app->bind(LoadActivityDataServiceContract::class, LoadActivityDataService::class);
     }
 
     /**
