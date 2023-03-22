@@ -5,6 +5,7 @@ namespace App\Constants;
 class ActivityConstants
 {
     public const ACTIVITIES_TABLE_NAME = 'activities';
+
     public const ID = 'id';
 
     public const ACTIVITY = 'activity';
@@ -37,5 +38,4 @@ class ActivityConstants
         self::CREATED_AT,
         self::UPDATED_AT,
     ];
-
 }

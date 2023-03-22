@@ -20,7 +20,7 @@ class ActivityFactoryTest extends TestCase
         $model = Activity::factory()->create();
         $this->assertModelExists($model);
 
-        foreach(ActivityConstants::LIST as $column) {
+        foreach (ActivityConstants::LIST as $column) {
             $this->assertNotNull($model->{$column});
         }
     }

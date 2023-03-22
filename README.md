@@ -5,7 +5,7 @@
   - Initialized git repository
   - Setup PHP 8.2 runtime with XDebug and verified unit tests passed
 
-2023-03-21 19:30:00 - 
+2023-03-21 19:30:00 - 21:00:00
   - Install and setup sail with mysql (Docker Desktop already installed)
     - https://laravel.com/docs/10.x/sail#main-content
     - Port 80 already in use (another project), choosing 8088
@@ -30,6 +30,7 @@
       - Tests passing!
     - Create model and factory with unit tests
       - Nothing to test in `Activity` model yet
+    - Install `symplify/easy-coding-standard` package
 
 
 
