@@ -53,6 +53,16 @@
       - Improved unit tests to catch this
       - Found I was using MIN(min_price), not MAX(max_price)
 
+2023-03-22 20:00:00 - 21:00:00
+  - Start on task 5, frontend
+  - I'm choosing vue.js, there seems to be a lot of demand for this framework
+    - https://laravel.com/docs/10.x/vite#vue
+    - Verify node v16+, Run `npm install`, installed vitejs/plugin-vue
+    - Darn... I'm just now seeing Laravel Breeze, which scaffolds Laravel, Vite, and Vue.  Oh well.
+    - https://laravel.com/docs/10.x/frontend#using-vue-react
+      - Lots to learn here! Installed inertia.  Let's see what happens!
+    - https://inertiajs.com/pages
+
 
 
 
