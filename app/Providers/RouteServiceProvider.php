@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Contracts\ActivityService as ActivityServiceContract;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
 
@@ -24,6 +26,14 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        /**
+         * We want to use our service instead of using Eloquent directly
+         */
+        $activityService = App::make(ActivityServiceContract::class);
+        Route::bind('activity', function ($id) use ($activityService) {
+            return $activityService->find($id);
+        });
+
         $this->configureRateLimiting();
 
         $this->routes(function () {

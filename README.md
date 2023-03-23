@@ -33,6 +33,27 @@
     - Install `symplify/easy-coding-standard` package
     - Create repository, services
     - Created job, listeners, command
+    - Found I was working on Task 2 as well
+
+2023-03-22 18:30:00 - 20:00:00
+  - Starting in on task 3, building the API endpoint
+  - Create resource controller with test, add resource route without middleware
+  - Don't need to create, update, or delete
+  - Create Activity Service
+    - Bind with app, bind with route service provider
+  - Create Activity API resource for json response
+    - With collection resource
+  - Add ability to specify groupBy input parameter
+  - Unit tests failed unexpectedly when running entire suite, forgot to use RefreshDatabase in one test case
+  - Added groupBy resources
+    - I spent too much time on this part. I wanted to find a better way.
+  - Realized I was also doing Task 4
+    - Instead, spent time in Postman to verify visually
+    - Found that max_price wasn't populating correctly (null)
+      - Improved unit tests to catch this
+      - Found I was using MIN(min_price), not MAX(max_price)
+
+
 
 
 

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ActivityController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,12 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::resource('activities', ActivityController::class, [
+    'only' => ['index', 'show'],
+]);
+
+/**
+ * This feels wrong.  I'd rather use 'activities?groupBy=type', but the resource response needs to be different.
+ */
+Route::get('activities:groupByType', [ActivityController::class, 'groupByType'])->name('activities.groupByType');

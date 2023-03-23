@@ -2,10 +2,13 @@
 
 namespace Tests\Feature\Console\Commands;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class PullActivityDataTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * @test
      */

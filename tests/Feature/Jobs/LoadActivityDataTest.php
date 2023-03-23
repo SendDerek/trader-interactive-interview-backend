@@ -4,11 +4,14 @@ namespace Tests\Feature\Jobs;
 
 use App\Jobs\LoadActivityData;
 use App\Models\Activity;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Bus;
 use Tests\TestCase;
 
 class LoadActivityDataTest extends TestCase
 {
+    use RefreshDatabase;
+
     /**
      * @test
      */
