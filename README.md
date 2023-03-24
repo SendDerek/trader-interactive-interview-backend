@@ -63,7 +63,12 @@
       - Lots to learn here! Installed inertia.  Let's see what happens!
     - https://inertiajs.com/pages
 
-
+2023-03-23 19:00:00
+  - After a good nights rest, I started thinking it was pretty difficult to get Laravel and Vue to play.
+Not only that, but it wasn't the assignment.  I'd like to 'simulate' a frontend that calls the API we
+just wrote on the Laravel backend.  Job description mentions Nuxt, so let's give that a shot.  See you on
+the other side...
+    - https://nuxtjs.org/docs/get-started/installation
 
 
 
